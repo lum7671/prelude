@@ -1,5 +1,7 @@
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa-stable" . "https://stable.melpa.org/packages/")
+             '("melpa" . "https://melpa.org/packages/")
+             )
 
 (setq package-pinned-packages
       '(
@@ -92,6 +94,7 @@
         (operate-on-number . "melpa-stable")
         (pcache . "melpa-stable")
         (php-mode . "melpa-stable")
+        (pipenv . "melpa")
         (pkg-info . "melpa-stable")
         (pkgbuild-mode . "melpa-stable")
         (popup . "melpa-stable")
