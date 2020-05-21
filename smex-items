@@ -1,0 +1,22 @@
+
+;; ----- smex-history -----
+(
+ prelude-update-packages
+ prelude-update
+ fill-region
+ fill-paragraph
+ toggle-truncate-lines
+ auto-fill-mode
+ next-error
+)
+
+;; ----- smex-data -----
+(
+ (next-error . 1)
+ (fill-paragraph . 4)
+ (fill-region . 13)
+ (auto-fill-mode . 1)
+ (toggle-truncate-lines . 1)
+ (prelude-update . 1)
+ (prelude-update-packages . 1)
+)
