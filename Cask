@@ -27,3 +27,5 @@
 (depends-on "web-mode")
 (depends-on "yasnippet")
 (depends-on "pipenv")
+(depends-on "pyvenv")
+(depends-on "py-autopep8")
