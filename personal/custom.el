@@ -103,4 +103,8 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(set-default-font "D2Coding-14")
+(add-to-list 'default-frame-alist '(font . "NanumGothicCoding-14"))
+(set-face-attribute 'default t :font "NanumGothicCoding-14")
+
+(set-face-attribute 'default nil :font "NanumGothicCoding-14")
+(set-frame-font "NanumGothicCoding-14" nil t)
