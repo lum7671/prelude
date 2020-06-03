@@ -108,3 +108,8 @@
 
 (set-face-attribute 'default nil :font "NanumGothicCoding-14")
 (set-frame-font "NanumGothicCoding-14" nil t)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'edit-server)
+(edit-server-start)

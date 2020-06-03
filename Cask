@@ -6,6 +6,7 @@
 (depends-on "cask")
 (depends-on "dash")
 (depends-on "drag-stuff")
+(depends-on "edit-server")
 (depends-on "eglot")
 (depends-on "exec-path-from-shell")
 (depends-on "expand-region")
