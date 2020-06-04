@@ -5,6 +5,8 @@
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
  '(default-input-method "korean-hangul3f")
+ '(doom-modeline-icon t)
+ '(doom-modeline-mode t)
  '(package-selected-packages
    (quote
     (doom-modeline py-autopep8 dash dash-functional helm-core lsp-mode transient with-editor pylint pipenv csv-mode julia-mode helm-projectile helm geiser company-anaconda anaconda-mode lsp-ui company-lsp json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company counsel swiper ivy exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window)))
@@ -121,3 +123,23 @@
 (use-package doom-modeline
   :ensure t
   :init (doom-modeline-mode 1))
+
+
+(use-package doom-themes
+  :config
+  ;; Global settings (defaults)
+  (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
+        doom-themes-enable-italic t) ; if nil, italics is universally disabled
+  (load-theme 'doom-dark+ t)
+
+  ;; Enable flashing mode-line on errors
+  (doom-themes-visual-bell-config)
+
+  ;; Enable custom neotree theme (all-the-icons must be installed!)
+  (doom-themes-neotree-config)
+  ;; or for treemacs users
+  (setq doom-themes-treemacs-theme "doom-colors") ; use the colorful treemacs theme
+  (doom-themes-treemacs-config)
+
+  ;; Corrects (and improves) org-mode's native fontification.
+  (doom-themes-org-config))
