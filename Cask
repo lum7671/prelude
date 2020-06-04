@@ -2,9 +2,11 @@
 (source melpa)
 
 (depends-on "ac-ispell")
+(depends-on "all-the-icons")
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "dash")
+(depends-on "doom-modeline")
 (depends-on "drag-stuff")
 (depends-on "edit-server")
 (depends-on "eglot")

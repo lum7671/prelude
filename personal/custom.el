@@ -7,7 +7,7 @@
  '(default-input-method "korean-hangul3f")
  '(package-selected-packages
    (quote
-    (py-autopep8 dash dash-functional helm-core lsp-mode transient with-editor pylint pipenv csv-mode julia-mode helm-projectile helm geiser company-anaconda anaconda-mode lsp-ui company-lsp json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company counsel swiper ivy exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window)))
+    (doom-modeline py-autopep8 dash dash-functional helm-core lsp-mode transient with-editor pylint pipenv csv-mode julia-mode helm-projectile helm geiser company-anaconda anaconda-mode lsp-ui company-lsp json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company counsel swiper ivy exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window)))
  '(safe-local-variable-values (quote ((encoding . utf-8))))
  '(size-indication-mode t)
  '(tool-bar-mode nil))
@@ -113,3 +113,11 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'edit-server)
 (edit-server-start)
+
+
+
+(use-package all-the-icons)
+
+(use-package doom-modeline
+  :ensure t
+  :init (doom-modeline-mode 1))
