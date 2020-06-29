@@ -115,7 +115,6 @@
         (smart-mode-line . "melpa-stable")
         (smartparens . "melpa-stable")
         (smartrep . "melpa-stable")
-        (smex . "melpa-stable")
         (spinner . "gnu")
         (stylus-mode . "melpa-stable")
         (swift-mode . "melpa-stable")

@@ -36,7 +36,7 @@
 (depends-on "python-docstring")
 (depends-on "s")
 (depends-on "smartparens")
-; (depends-on "smex")
+(depends-on "smex")
 (depends-on "tuareg")
 (depends-on "typescript-mode")
 (depends-on "pyvenv")
