@@ -37,7 +37,7 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-;(package-initialize)
+(package-initialize)
 
 ;; * [GitHub - Atman50/emacs-config: A literate emacs configuration for C#, python, ivy, yasnippet, ...](https://github.com/Atman50/emacs-config#org5309cf1)
 
