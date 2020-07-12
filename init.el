@@ -37,19 +37,7 @@
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
-(package-initialize)
-
-;; * [GitHub - Atman50/emacs-config: A literate emacs configuration for C#, python, ivy, yasnippet, ...](https://github.com/Atman50/emacs-config#org5309cf1)
-
-(setq gc-cons-threshold 64000000)
-(add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
-
-(setq auto-window-vscroll nil)
-
-
-;; Cask:
-(require 'cask "~/.cask/cask.el")
-(cask-initialize)
+;(package-initialize)
 
 (defvar current-user
   (getenv
@@ -162,8 +150,5 @@ by Prelude.")
 (prelude-eval-after-init
  ;; greet the use with some useful tip
  (run-at-time 5 nil 'prelude-tip-of-the-day))
-
-;; https://julialang.org/
-(require 'julia-mode)
 
 ;;; init.el ends here
