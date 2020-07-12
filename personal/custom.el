@@ -147,10 +147,14 @@
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (add-to-list 'auto-mode-alist
              '("\\.psql$" . (lambda ()
                               (sql-mode)
                               (sql-highlight-postgres-keywords))))
+
+(add-hook 'sql-mode-hook 'sqlind-minor-mode)
+
 (add-to-list 'auto-mode-alist
              '("\\.hql$" . (lambda ()
                               (sql-mode))))

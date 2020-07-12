@@ -41,6 +41,7 @@
 (depends-on "s")
 (depends-on "smartparens")
 (depends-on "smex")
+(depends-on "sql-indent")
 (depends-on "tuareg")
 (depends-on "typescript-mode")
 (depends-on "pyvenv")
