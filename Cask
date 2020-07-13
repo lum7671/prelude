@@ -1,5 +1,6 @@
 (source gnu)
 (source melpa)
+(source marmalade)
 
 (depends-on "ac-ispell")
 (depends-on "all-the-icons")
