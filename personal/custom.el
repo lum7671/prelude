@@ -158,3 +158,9 @@
 (add-to-list 'auto-mode-alist
              '("\\.hql$" . (lambda ()
                               (sql-mode))))
+
+(defvar prelude-personal-myels-dir (expand-file-name  "myels" prelude-personal-dir)
+  "This directory is personal el files.")
+(add-to-list 'load-path prelude-personal-myels-dir)
+
+(autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
