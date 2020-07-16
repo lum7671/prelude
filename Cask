@@ -1,6 +1,5 @@
 (source gnu)
 (source melpa)
-(source marmalade)
 
 (depends-on "ac-ispell")
 (depends-on "all-the-icons")
@@ -35,6 +34,7 @@
 (depends-on "pipenv")
 (depends-on "popwin")
 (depends-on "prodigy")
+(depends-on "project")
 (depends-on "projectile")
 (depends-on "py-autopep8")
 (depends-on "pylint")
