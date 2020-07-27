@@ -164,3 +164,8 @@
 (add-to-list 'load-path prelude-personal-myels-dir)
 
 (autoload 'flyspell-mode "flyspell" "On-the-fly spelling checker." t)
+
+
+(require 'yasnippet)
+(yas/initialize)
+(yas/load-directory "~/.emacs.d/snippets")
