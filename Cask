@@ -36,6 +36,7 @@
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
+(depends-on "py-autopep8")
 (depends-on "pylint")
 (depends-on "python-docstring")
 (depends-on "pyvenv")
