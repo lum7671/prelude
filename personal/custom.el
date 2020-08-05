@@ -167,8 +167,8 @@
 
 
 (require 'yasnippet)
-(yas/initialize)
-(yas/load-directory "~/.emacs.d/snippets")
+(yas-global-mode 1)
+(yas-load-directory "~/.emacs.d/snippets")
 
 
 (setq org-plantuml-jar-path (expand-file-name "/usr/local/Cellar/plantuml/1.2020.15/libexec/plantuml.jar"))
