@@ -26,7 +26,7 @@
 
 (use-package eglot
              :config
-             (add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1))))
+             (add-hook 'eglot-managed-mode-hook (lambda () (flymake-mode -1))))
 
 (use-package pipenv
              :hook (python-mode . pipenv-mode)
