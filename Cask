@@ -23,6 +23,7 @@
 (depends-on "flycheck")
 (depends-on "flycheck-cask")
 (depends-on "flycheck-pyre")
+(depends-on "flymake")
 (depends-on "flymake-python-pyflakes")
 (depends-on "flyspell-popup")
 (depends-on "go-projectile")
