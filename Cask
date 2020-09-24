@@ -35,6 +35,7 @@
 (depends-on "lsp-pyre")
 (depends-on "macrostep")
 (depends-on "magit")
+(depends-on "merlin")
 (depends-on "multiple-cursors")
 (depends-on "nyan-mode")
 (depends-on "pallet")
