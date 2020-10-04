@@ -11,6 +11,7 @@ semanticdb
 url
 ede-projects.el
 .DS_Store
+custom.el
 places
 .smex-items
 savefile/
@@ -25,5 +26,6 @@ network-security.data
 prelude-cheatsheet.el
 prelude-cheatsheet.aux
 prelude-cheatsheet.log
+transient/
 anaconda-mode
 elpy
