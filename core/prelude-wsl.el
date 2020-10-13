@@ -1,15 +1,14 @@
-;;; prelude-dart.el --- Emacs Prelude: Dart programming configuration.
+;;; prelude-wsl.el --- Emacs Prelude: WSL-specific setup.
 ;;
 ;; Copyright © 2011-2020 Bozhidar Batsov
 ;;
-;; Author: Rafael Medina <rafaelmedina789@gmail.com>
 ;; URL: https://github.com/bbatsov/prelude
 
 ;; This file is not part of GNU Emacs.
 
 ;;; Commentary:
 
-;; Basic configuration for programming in Dart.
+;; Additional setup that's useful when running Emacs in WSL.
 
 ;;; License:
 
@@ -30,27 +29,14 @@
 
 ;;; Code:
 
-(require 'prelude-lsp)
-(prelude-require-packages '(lsp-dart))
+;; teach Emacs how to open links with your default browser
+(let ((cmd-exe "/mnt/c/Windows/System32/cmd.exe")
+      (cmd-args '("/c" "start")))
+  (when (file-exists-p cmd-exe)
+    (setq browse-url-generic-program  cmd-exe
+          browse-url-generic-args     cmd-args
+          browse-url-browser-function 'browse-url-generic
+          search-web-default-browser 'browse-url-generic)))
 
-(with-eval-after-load 'lsp-dart
-  (add-hook 'dart-mode-hook #'lsp))
-
-(with-eval-after-load 'dart-mode
-  (defun prelude-dart-mode-defaults ()
-
-    (setq dap-launch-configuration-providers  '(dap-debug-template-configurations-provider))
-
-    ;; Add to default dart-mode key bindings
-    (lsp-dart-define-key "s o" #'lsp-dart-show-outline)
-    (lsp-dart-define-key "s f" #'lsp-dart-show-flutter-outline)
-    (dap-dart-setup))
-
-  (setq prelude-dart-mode-hook 'prelude-dart-mode-defaults)
-
-  (add-hook 'dart-mode-hook (lambda ()
-                            (run-hooks 'prelude-dart-mode-hook))))
-
-(provide 'prelude-dart)
-
-;;; prelude-dart.el ends here
+(provide 'prelude-wsl)
+;;; prelude-wsl.el ends here
