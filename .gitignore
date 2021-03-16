@@ -29,3 +29,6 @@ prelude-cheatsheet.log
 transient/
 anaconda-mode
 elpy
+var/
+.cache/
+.lsp-session*
