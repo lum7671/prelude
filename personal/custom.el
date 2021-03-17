@@ -9,7 +9,7 @@
  '(doom-modeline-mode t)
  '(gnutls-algorithm-priority "normal:-vers-tls1.3")
  '(package-selected-packages
-   '(dockerfile-mode elpy edit-server yasnippet use-package eglot pylint python-docstring doom-themes highlight iedit eldoc merlin doom-themes python-docstring plantuml-mode ggtags cask-mode smex ghub ido-completing-read+ all-the-icons evil-surround helm-ag markdown-mode popup scala-mode doom-modeline py-autopep8 dash dash-functional helm-core lsp-mode transient with-editor pylint pipenv csv-mode julia-mode helm-projectile helm geiser company-anaconda anaconda-mode lsp-ui company-lsp json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company counsel swiper ivy exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window))
+   '(selectrum-prescient selectrum dockerfile-mode elpy edit-server yasnippet use-package eglot pylint python-docstring doom-themes highlight iedit eldoc merlin doom-themes python-docstring plantuml-mode ggtags cask-mode smex ghub ido-completing-read+ all-the-icons evil-surround helm-ag markdown-mode popup scala-mode doom-modeline py-autopep8 dash dash-functional helm-core lsp-mode transient with-editor pylint pipenv csv-mode julia-mode helm-projectile helm geiser company-anaconda anaconda-mode lsp-ui company-lsp json-mode js2-mode rainbow-mode elisp-slime-nav rainbow-delimiters company counsel swiper ivy exec-path-from-shell zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens operate-on-number move-text magit projectile imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region epl editorconfig easy-kill diminish diff-hl discover-my-major crux browse-kill-ring beacon anzu ace-window))
  '(safe-local-variable-values '((encoding . utf-8)))
  '(size-indication-mode t)
  '(tool-bar-mode nil))
@@ -34,9 +34,7 @@
 (use-package pipenv
              :hook (python-mode . pipenv-mode)
              :init
-             (setq
-              pipenv-projectile-after-switch-function
-              #'pipenv-projectile-after-switch-extended))
+             (setq pipenv-projectile-after-switch-function #'pipenv-projectile-after-switch-extended))
 
 (setq py-autopep8-options '("--max-line-length=77"))
 
@@ -207,3 +205,5 @@
 ;; use the default location (`~/.virtualenvs`), or if the
 ;; the environment variable `WORKON_HOME` points to the right place
 ;(setq venv-location "/path/to/your/virtualenvs/")
+
+; (setq prelude-python-mode-set-encoding-automatically t)

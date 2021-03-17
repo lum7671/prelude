@@ -48,6 +48,8 @@
 (depends-on "python-docstring")
 (depends-on "pyvenv")
 (depends-on "s")
+(depends-on "selectrum")
+(depends-on "selectrum-prescient")
 (depends-on "slime")
 (depends-on "smartparens")
 (depends-on "smex")
