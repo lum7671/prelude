@@ -1,0 +1,5 @@
+(when (eq system-type 'darwin)
+  (set-face-attribute 'default nil :family "D2Coding")
+  (set-face-attribute 'default nil :height 140)
+  (set-fontset-font t 'hangul (font-spec :name "D2Coding"))
+  )
