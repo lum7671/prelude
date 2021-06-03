@@ -1,5 +1,6 @@
 (add-to-list 'package-archives
-             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+             '("melpa" . "https://melpa.org/packages/")
+             '("melpa-stable" . "https://stable.melpa.org/packages/"))
 
 (setq package-pinned-packages
       '(
@@ -77,6 +78,7 @@
         (json-mode . "melpa-stable")
         (json-reformat . "melpa-stable")
         (json-snatcher . "melpa-stable")
+        (jupyter . "melpa")
         (kivy-mode . "melpa-stable")
         (less-css-mode . "melpa-stable")
         (logito . "melpa-stable")
