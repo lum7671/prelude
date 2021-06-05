@@ -48,3 +48,7 @@
                                                     (:kernel . "julia-1.0")))
 
 (setq ob-async-no-async-languages-alist '("jupyter-python" "jupyter-julia"))
+
+;; (require 'lsp-python-ms)
+;; (setq lsp-python-ms-auto-install-server t)
+;; (add-hook 'python-mode-hook #'lsp) ; or lsp-deferred
