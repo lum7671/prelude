@@ -8,8 +8,13 @@
    '("78e9a3e1c519656654044aeb25acb8bec02579508c145b6db158d2cfad87c44e" default))
  '(default-input-method "korean-hangul3f")
  '(global-display-line-numbers-mode t)
+ '(package-archives
+   '(("melpa" . "http://melpa.org/packages/")
+     ("gnu" . "https://elpa.gnu.org/packages/")
+     ("melpa-stable" . "http://stable.melpa.org/packages/")
+     ("org" . "http://orgmode.org/elpa/")))
  '(package-selected-packages
-   '(go-projectile edit-server jupyter solarized-theme ivy geiser scala-mode ron-mode flycheck-rust cargo rust-mode company-anaconda anaconda-mode slime evil-numbers evil-visualstar evil-surround evil helm-ag helm-descbinds helm-projectile helm selectrum-prescient selectrum smex ido-completing-read+ flx-ido yaml-mode web-mode lsp-ui zop-to-char zenburn-theme which-key volatile-highlights undo-tree super-save smartrep smartparens rainbow-mode rainbow-delimiters projectile operate-on-number nlinum move-text magit lsp-mode json-mode js2-mode imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell elisp-slime-nav editorconfig easy-kill discover-my-major diminish diff-hl crux counsel company browse-kill-ring anzu ag ace-window))
+   '(merlin utop typescript-mode tuareg key-chord go-projectile edit-server jupyter ivy geiser scala-mode ron-mode flycheck-rust cargo rust-mode company-anaconda anaconda-mode slime evil-numbers evil-visualstar evil-surround evil helm-ag helm-descbinds helm-projectile helm selectrum-prescient selectrum smex ido-completing-read+ flx-ido yaml-mode web-mode lsp-ui zop-to-char which-key volatile-highlights undo-tree super-save smartrep smartparens rainbow-mode rainbow-delimiters projectile operate-on-number nlinum move-text magit lsp-mode json-mode js2-mode imenu-anywhere hl-todo guru-mode gitignore-mode gitconfig-mode git-timemachine gist flycheck expand-region exec-path-from-shell elisp-slime-nav editorconfig easy-kill discover-my-major diminish diff-hl crux counsel company browse-kill-ring anzu ag ace-window))
  '(safe-local-variable-values '((encoding . utf-8)))
  '(size-indication-mode t)
  '(tool-bar-mode nil))
@@ -32,15 +37,15 @@
              '("\\.hql$" . (lambda ()
                              (sql-mode))))
 
-(require 'package)
-(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "http://melpa.org/packages/")))
-
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((emacs-lisp . t)
-   (python . t)
-   (jupyter . t)))
+;; (require 'package)
+;; (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+;;                          ("melpa" . "http://melpa.org/packages/")))
+;;
+;; (org-babel-do-load-languages
+;;  'org-babel-load-languages
+;;  '((emacs-lisp . t)
+;;    (python . t)
+;;    (jupyter . t)))
 
 ;; (setq org-babel-default-header-args:jupyter-julia '((:async . "yes")
 ;;                                                     (:session . "jl")

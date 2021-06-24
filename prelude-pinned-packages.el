@@ -1,9 +1,5 @@
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
-;; Comment/uncomment this line to enable MELPA Stable if desired.  See `package-archive-priorities`
-;; and `package-pinned-packages`. Most users will not need or want to do this.
-;;(add-to-list 'package-archives '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(package-initialize)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
 (setq package-pinned-packages
       '(
@@ -34,6 +30,7 @@
         (discover-my-major . "melpa-stable")
         (dockerfile-mode . "melpa-stable")
         (easy-kill . "melpa-stable")
+        (edit-server . "melpa")
         (elisp-slime-nav . "melpa-stable")
         (elixir-mode . "melpa-stable")
         (elm-mode . "melpa-stable")
@@ -81,7 +78,6 @@
         (json-mode . "melpa-stable")
         (json-reformat . "melpa-stable")
         (json-snatcher . "melpa-stable")
-        (jupyter . "melpa")
         (kivy-mode . "melpa-stable")
         (less-css-mode . "melpa-stable")
         (logito . "melpa-stable")
@@ -116,6 +112,7 @@
         (smart-mode-line . "melpa-stable")
         (smartparens . "melpa-stable")
         (smartrep . "melpa-stable")
+        (smex . "melpa-stable")
         (spinner . "gnu")
         (stylus-mode . "melpa-stable")
         (swift-mode . "melpa-stable")
